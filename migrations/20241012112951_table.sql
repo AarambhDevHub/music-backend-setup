@@ -65,7 +65,7 @@ CREATE TABLE playback_history (
     played_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     duration_played INTERVAL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- User Favorites Table
