@@ -67,7 +67,7 @@ async fn main() {
     };
 
     let cors = CorsLayer::new()
-        .allow_origin("http://localhost:3000".parse::<HeaderValue>().unwrap())
+        .allow_origin("https://localhost:3000".parse::<HeaderValue>().unwrap())
         .allow_headers([AUTHORIZATION, ACCEPT, CONTENT_TYPE])
         .allow_credentials(true)
         .allow_methods([Method::GET, Method::POST, Method::PUT]);
@@ -82,7 +82,7 @@ async fn main() {
 
     println!(
         "{}",
-        format!("🚀 Server is running on http://localhost:{}", config.port)
+        format!("🚀 Server is running on https://localhost:{}", config.port)
     );
 
     // let listener = tokio::net::TcpListener::bind(format!("0.0.0.0:{}", config.port)).await.unwrap();
